@@ -1,0 +1,74 @@
+/*====MD====*/
+.MD {}
+.MD .content { align-items: center;}
+.MD .md-box1 { width:30%; }
+.MD .md-box2 { position:relative; width:70%; }
+.MD .md-box2 img { width:100%; }
+
+.md-box1 ul { text-align:center; }
+/*★ 스크롤 나타내기 ★*/
+.md-box1 ul li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+        margin-bottom:25px; 
+}
+
+/* 보여질 때 적용 */
+.md-box1.show ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+.md-box1.show ul  li:nth-child(1) { font-size : 25px; color : #888; transition-delay: 0.4s; }
+.md-box1.show ul  li:nth-child(2) { font-size : 35px; color : #aaa; transition-delay: 0.7s; }
+.md-box1.show ul  li:nth-child(3) { font-size : 30px; color : #cdcdcd; transition-delay: 1s; }
+.md-box1.show ul  li:nth-child(4) { font-size : 45px; color : #fff; transition-delay: 1.3s; }
+.md-box1.show ul  li:nth-child(5) { font-size : 60px;  font-weight:900; transition-delay: 1.5s; }
+
+@media (min-width: 1024px) {
+  .md-box1.show ul  li:nth-child(1) { font-size : 17px; }
+  .md-box1.show ul  li:nth-child(2) { font-size : 20px; }
+  .md-box1.show ul  li:nth-child(3) { font-size : 23px; }
+  .md-box1.show ul  li:nth-child(4) { font-size : 26px; }
+  .md-box1.show ul  li:nth-child(5) { font-size : 40px;  }
+
+}
+
+/*★ 그래프 원형 효과 ★*/
+.ripple-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 200, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: ripple 2s infinite;
+}
+
+.wave2 {
+  animation-delay: 1s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+.ripple-container  { top:55px!important; right:67px!important;}
+}

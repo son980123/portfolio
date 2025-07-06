@@ -1,0 +1,71 @@
+/*====Campaign====*/
+.CAMPAIGN {}
+.CAMPAIGN>div{ max-width:100%; }
+
+.cam_box {}
+.cam_box img {}
+.cam_box div { padding:10px; }
+.cam_box div span { font-size:25px; justify-content: space-between ; align-items:center; }
+.cam_box div span em:nth-of-type(1)  { font-weight:800; }
+.cam_box div span em:nth-of-type(2) { text-align:right; font-weight:300;  }
+.cam_box div p { font-size:35px; text-align:right; margin-top:15px; font-weight:500;  }
+
+@media (min-width: 1024px) {
+  .cam_box div span { font-size:20px; } 
+  .cam_box div p { font-size:30px; }
+} 
+
+ .slider {
+  position: relative;
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides .cam_box {
+  flex: 0 0 auto; /* 슬라이드 크기를 JS에서 지정한 만큼 딱 유지 */
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.slides img {
+  width: 400px;
+  height: auto;  /* 비율 유지 */
+  display: block;
+  user-select: none;
+}
+
+.slides .cam_box.active2 {
+  opacity: 1;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+
+/* @media (min-width: 1024px) {
+  .slider { width:900px; }
+      .slides img { width:300px; }
+} */
