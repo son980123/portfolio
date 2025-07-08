@@ -5,6 +5,7 @@ a { text-decoration: none; color:#333; }
 html { overflow-x: hidden; font-size:10px; }
 body { position:relative; width:100%; font-family: 'Pretendard', 'GmarketSans', 'Arial', sans-serif; }
 
+
 /*기존 fullpage.js 변경*/
 .fp-watermark { display:none; }
 .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow>.fp-overflow { overflow-y: unset!important;}
@@ -36,6 +37,8 @@ section h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperl
 
 /*인트로*/
 .text-wrap { text-align:center;  font-size:5rem; white-space: nowrap;  font-family: 'Paperlogy-8ExtraBold', 'Pretendard', 'GmarketSans', 'Arial', sans-serif;}
+
+
 .fixed-box {  display: inline-block;  width: 9ch;  height: 9rem;  overflow: hidden;  position: relative;  vertical-align: middle;}
 .slide-texts {  position: absolute;  top: 0;  left: 0;  width: 100%;  transition: transform 0.6s ease-in-out;}
 .slide-texts span {  display: block;  height: 9rem;  line-height: 9rem;  text-align: center; font-family:'Cafe24Shiningstar', 'Pretendard', 'GmarketSans', 'Arial', sans-serif; font-size:9rem; }
@@ -43,13 +46,13 @@ section h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperl
 /*아웃트로*/
 .OUTRO { position:relative; }
 .OUTRO ul { position:absolute; width:100%; bottom:10%; left:50%; transform:translate(-50%,-50%); text-align:center; width: 100%; margin:0 auto; justify-content:center;  }
-.OUTRO ul li { width:10%; font-size:22px; padding:5px 20px; border-left:1px solid #fff; }
+.OUTRO ul li { font-size:1.5rem; padding:0 20px; border-left:1px solid #fff; }
 .OUTRO ul li:nth-of-type(4) { border-right:1px solid #fff; }
 
 /*메인타이틀*/
 .mainTitle { margin-bottom:50px; }
-.mainTitle h2 { font-size:90px; letter-spacing: -1px; margin-bottom:10px; }
-.mainTitle p { font-size:30px;  letter-spacing:-1px; font-weight:100; }
+.mainTitle h2 { font-size:8rem; letter-spacing: -1px; margin-bottom:10px; }
+.mainTitle p { font-size:2.5rem;  letter-spacing:-1px; font-weight:100; }
 /*Main Title 스크롤 효과*/
 .mainTitle h2, .mainTitle p {
         opacity: 0;
@@ -76,12 +79,40 @@ section h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperl
         transition-delay: 0.5s;
 }
 
+.mobile-page { position:relative; display:none; width:100%; height:100%; background:#000; text-align:center;  }
+.mobile-page img { display:block; width:100%; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+.mobile-page address { bottom:100px; color:#fff; font-size:1.6rem; position:absolute; bottom:10%; left:50%; transform:translate(-50%,-50%); }
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 3s infinite;
+}
+
+/* 모바일: 가로폭 996px 이하에서 PC 컨텐츠 숨기고 안내만 보이기 */
+@media screen and (max-width: 996px) {
+        .pc-page {
+                display: none;
+        }
+      .mobile-page {
+                display: block;
+      }
+      #fp-nav.fp-right { display:none!important; }
+}
   
 /* 데스크탑 스타일 (13인치 포함) */
 @media (min-width: 1024px) {
   /* 데스크탑 전용 레이아웃 */
-  /* .inner { width:1000px; } */
-  /* .inner { max-width:1400px; } */
+  .inner { width:1200px; }
   .mainTitle h2 { font-size:60px;  }
   .mainTitle p { font-size:23px; }
 }
