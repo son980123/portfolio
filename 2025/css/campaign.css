@@ -1,0 +1,43 @@
+/*====Campaign====*/
+.CAMPAIGN {}
+.CAMPAIGN>div{ max-width:100%; }
+    .cam-swiper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    /* .cam-swiper .swiper-slide {
+      border: 1px solid #ddd;
+      background: #fff;
+    } */
+
+.cam-swiper .swiper-slide img {
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+      display: block;
+      opacity:0.3;
+      transition:all .3s; 
+ }
+.cam-swiper .swiper-slide-active  img { opacity:1; }
+
+.cam-swiper .swiper-slide p {
+    opacity:0.3;
+    transition:all .3s; 
+}
+.cam-swiper .swiper-slide-active p { opacity:1; }
+
+    .cam-swiper-button-next,
+    .cam-swiper-button-prev {
+      color: #333;
+    }
+
+
+
+.cam-swiper-slide p { text-align:left; padding:20px;  }
+.cam-swiper-slide p strong { font-size:3rem;  display:block; font-weight:500; border-bottom:1px dashed #aaa; padding-bottom:15px; }
+.cam-swiper-slide p strong b { display:block; font-size:4rem; font-weight:900; }
+.cam-swiper-slide p span { display:block; margin-top:15px; }
+.cam-swiper-slide p span em { display:inline-block; padding:5px 10px; border:1px solid #ddd; border-radius:50px; color:#ddd; font-size:16px; margin:5px; }
