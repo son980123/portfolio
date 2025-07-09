@@ -1,0 +1,15 @@
+/*인트로*/
+#INTRO {  }
+#INTRO .flex { align-items : center; }
+.text-wrap { font-size:5rem; white-space: nowrap;  font-family: 'Paperlogy', 'Pretendard', 'GmarketSans', 'Arial', sans-serif; font-weight:500;}
+.fixed-box {  display: inline-block;  width: 9ch;  height: 9rem;  overflow: hidden;  position: relative;  vertical-align: middle;}
+.slide-texts {  position: absolute;  top: 0;  left: 0;  width: 100%;  transition: transform 0.6s ease-in-out;}
+.slide-texts span {  display: block;  height: 9rem;  line-height: 9rem;  text-align: center; font-family:'Cafe24Shiningstar', 'Pretendard', 'GmarketSans', 'Arial', sans-serif; font-size:9rem; }
+.text-wrap b { font-weight:800; }
+
+/*아웃트로*/
+#OUTRO { position:relative; color:#fff; }
+#OUTRO h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperlogy-8ExtraBold', 'Pretendard', 'GmarketSans', 'Arial', sans-serif; color:#fff; }
+#OUTRO ul { position:absolute; width:100%; bottom:10%; left:50%; transform:translate(-50%,-50%); text-align:center; width: 100%; margin:0 auto; justify-content:center;  }
+#OUTRO ul li { font-size:1.5rem; padding:0 20px; border-left:1px solid #fff; }
+#OUTRO ul li:nth-of-type(4) { border-right:1px solid #fff; }

@@ -1,0 +1,22 @@
+#ABOUT { position:relative; }
+
+#ABOUT .content { }
+
+#ABOUT .about-hello {}
+#ABOUT .about-hello h2 { font-size:5rem; font-weight:500; }
+#ABOUT .about-hello h2 b { font-weight:900; }
+
+#ABOUT .content div.info { flex-wrap: wrap; }
+#ABOUT .content>div:nth-of-type(1) { width:100%; }
+#ABOUT .content>div:nth-of-type(2) { width:30%; position:absolute; bottom:0; right:0; }
+#ABOUT .content img { width:100%; }
+
+#ABOUT .info>div.about-hello { width:100%; }
+#ABOUT .info>div { width:50%; }
+.about-title { background:#000; color:#fff; padding:7px 20px; border-radius:50px; display:inline-block; font-size:1.8rem; }
+.about-con { padding:7px 20px; }
+
+#ABOUT .info>div ul {}
+#ABOUT .info>div ul li { font-size:1.5rem; height:5rem; word-break: keep-all; }
+#ABOUT .info>div ul:nth-of-type(1) li { font-weight:600; }
+#ABOUT .info>div ul:nth-of-type(2) { padding-left:1rem; }

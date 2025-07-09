@@ -1,0 +1,37 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+li { list-style:none; }
+address,em,i { font-style:normal; }
+a { text-decoration: none; color:#333; }
+html { font-size:10px; }
+body { position:relative; width:100%; font-family: 'Pretendard', 'GmarketSans', 'Arial', sans-serif; }
+
+/*공통*/
+section { width:100%; height:100vh; }
+.inner { width:100%; max-width:1500px; height:100%; margin:0 auto; padding:50px 0; }
+.content { position:relative; padding:20px;  }
+.flex { display:flex; }
+.gra { /*그라데이션*/
+  font-weight: bold;
+  background:linear-gradient(90deg, #00E0B3 0%, #00C9DF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*배경화면*/
+#INTRO { background:#fff;  }
+#ABOUT {  background:#f6f6f6; }
+#RND { background:#fff; }
+#PROMOTION { background:url(../img/bg_pro.png); background-size:cover;}
+#CAMPAIGN { background:#fff; }
+#MD { background:url(../img/bg_md.png); background-size:cover;}
+#MARKETING { background:#fff; /*background:url(../img/bg_m.png); background-size:cover;*/ }
+#OUTRO { background: linear-gradient(180deg, #00E0B3 0%, #00C9DF 100%); }
+
+/*메인타이틀*/
+.mainTitle {  width:100%; align-items: center; margin-bottom:30px; font-family: 'Paperlogy', 'Pretendard', 'GmarketSans', 'Arial', sans-serif;  }
+.mainTitle span { font-weight: 800; font-size: 4rem; padding-right: 30px; }
+.mainTitle .line { flex-grow: 1; height: 1px; background: #555; }
+
+@media screen and (max-width: 1024px) {
+  .inner { max-width:1200px; }
+}
