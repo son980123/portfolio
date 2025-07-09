@@ -99,7 +99,7 @@ section h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperl
 }
 
 /* 모바일: 가로폭 996px 이하에서 PC 컨텐츠 숨기고 안내만 보이기 */
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 1024px) {
         .pc-page {
                 display: none;
         }
