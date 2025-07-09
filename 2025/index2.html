@@ -41,7 +41,26 @@
 </head>
 <body>
 
-    <div id="wrap">
+
+                <!--모바일 페이지-->
+        <div class="mobile-page">
+                <img src="myimage.jpg">
+                <address class="blink">PC버전을 이용해주세요.</address>
+        </div>
+
+    <div id="wrap" class="pc-page">
+
+        <!-- 플로팅바 -->
+          <div id="floating-bar">
+            <a href="#INTRO">Intro</a>
+            <a href="#ABOUT">About Me</a>
+            <a href="#RND">R&D</a>
+            <a href="#PROMOTION">Promotion</a>
+            <a href="#CAMPAIGN">Campaign</a>
+            <a href="#MD">MD & Sales</a>
+            <a href="#MARKETING">Marketing</a>
+            <a href="#OUTRO">Outro</a>
+          </div>
 
         <!--첫번째--> <!--인트로-->
         <section id="INTRO">
@@ -615,7 +634,7 @@
 
                                 <!--8번 페이지--> <!-- 아웃트로 -->
                 <section id="OUTRO">
-                        <h1>THANK YOU</h1>
+                        <h1 class="gra">THANK YOU</h1>
                         <ul class="flex">
                                 <li><i class="fa-solid fa-crown"></i> 손재성</li>
                                 <li><i class="fa-solid fa-cake-candles"></i> 1998.01.23</li>
@@ -657,6 +676,57 @@
                 observeElements(".pro_graph2", 0.5); // 50%만 보여도 실행
 
                 // ▲▲ 공통 IntersectionObserver 끝 ▲▲
+
+                /*-------------------------------------------------------*/
+                
+
+                /*플로팅바 스크롤*/
+const links = document.querySelectorAll('#floating-bar a');
+
+// 부드러운 스크롤
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    targetElement.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// 대상 섹션 가져오기
+const sections = Array.from(links).map(link => {
+  const id = link.getAttribute('href');
+  return document.querySelector(id);
+});
+
+// Observer 옵션
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.6 // 60% 보이면 active
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = `#${entry.target.id}`;
+
+      // active 제거 후 해당 링크에 active 추가
+      links.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === id);
+      });
+    }
+  });
+}, options);
+
+// 각 섹션을 관찰 시작
+sections.forEach(section => {
+  if (section) {
+    observer.observe(section);
+  }
+});
 
 
 
