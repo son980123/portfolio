@@ -1,7 +1,7 @@
 /*====R&D====*/
 #RND { position:relative; width:100%;overflow-x:hidden;  }
 
-.rnd_con { position:absolute; width:100%; top:50%; left:50%; transform:translate(-50%,-50%); }
+.rnd_con { position:absolute; width:100%; top:55%; left:50%; transform:translate(-50%,-50%); }
 
 .rnd_con .swiper-wrapper { height:100%; }
 .rnd_con .swiper {

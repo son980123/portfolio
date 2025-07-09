@@ -1,6 +1,7 @@
 /*====MD====*/
 #MD .mainTitle span { color:#fff; }
-#MD .content { align-items: center;}
+#MD .subTitle { color:#fff; }
+#MD .content { align-items: center; margin-top:50px; }
 #MD .md-box1 { width:30%; }
 #MD .md-box2 { position:relative; width:70%; }
 #MD .md-box2 img { width:100%; }

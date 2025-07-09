@@ -1,6 +1,7 @@
 /*====PROMOTION====*/
 #PROMOTION .mainTitle span { color:#fff; }
-#PROMOTION .content { width:100%; }
+#PROMOTION .subTitle { color:#fff; }
+#PROMOTION .content { width:100%; top:50px; }
 #PROMOTION .content>div>div { width:50%; }
 #PROMOTION .promotion-box1 { align-items:flex-end; }
 #PROMOTION .promotion-box2>div { justify-content:center; }
