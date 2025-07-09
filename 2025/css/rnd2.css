@@ -35,10 +35,11 @@
 
 .rnd_con .description { 
         position:relative;
+        top: 30px;
         z-index:1;
         text-align : center; 
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: all 0.5s ease;
         word-break: keep-all;
         font-size:1.5rem; 
       }
@@ -48,6 +49,7 @@
     
 .rnd_con .swiper-slide-active:hover .description {
       opacity: 1;
+      top:10px;
     }
 
     .rnd-prev,
