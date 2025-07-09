@@ -108,8 +108,10 @@ section h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperl
       }
       #fp-nav.fp-right { display:none!important; }
 }
-  
+
+
 /* 데스크탑 스타일 (13인치 포함) */
+/*min-width → 이상까지 / max-width → 이하까지*/
 @media (min-width: 1024px) {
   /* 데스크탑 전용 레이아웃 */
   .inner { width:1200px; }
@@ -120,4 +122,5 @@ section h1 { font-size:80px; text-align:center; font-family: 'SBAggroB', 'Paperl
 /* 대형 데스크탑 (고해상도 모니터용) */
 @media (min-width: 1440px) {
   /* 더 넓은 레이아웃이나 추가 스타일 */
+  .inner { width:1500px; }
 }
