@@ -20,11 +20,11 @@
   opacity: 1;
   transform: translateY(0);
 }
-.md-box1.show ul  li:nth-child(1) { font-size : 25px; color : #888; transition-delay: 0.4s; }
-.md-box1.show ul  li:nth-child(2) { font-size : 35px; color : #aaa; transition-delay: 0.7s; }
-.md-box1.show ul  li:nth-child(3) { font-size : 30px; color : #cdcdcd; transition-delay: 1s; }
-.md-box1.show ul  li:nth-child(4) { font-size : 45px; color : #fff; transition-delay: 1.3s; }
-.md-box1.show ul  li:nth-child(5) { font-size : 6rem;  font-weight:900; letter-spacing:-1px; transition-delay: 1.5s; }
+.md-box1.show ul  li:nth-child(1) { font-size : 25px; color : #888; transition-delay: 0s; }
+.md-box1.show ul  li:nth-child(2) { font-size : 35px; color : #aaa; transition-delay: 0.2s; }
+.md-box1.show ul  li:nth-child(3) { font-size : 30px; color : #cdcdcd; transition-delay: 0.4s; }
+.md-box1.show ul  li:nth-child(4) { font-size : 45px; color : #fff; transition-delay: 0.6s; }
+.md-box1.show ul  li:nth-child(5) { font-size : 6rem;  font-weight:900; letter-spacing:-1px; transition-delay: 0.8s; }
 
 
 @media (min-width: 1024px) {
