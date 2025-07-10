@@ -1,0 +1,78 @@
+/*====R&D====*/
+#RND { position:relative; width:100%;overflow-x:hidden;  }
+
+.rnd_con { position:absolute; width:100%; top:55%; left:50%; transform:translate(-50%,-50%); }
+
+.rnd_con .swiper-wrapper { height:100%; }
+.rnd_con .swiper {
+      /* width: 90%;
+      max-width: 1400px;*/
+      width:100%;
+      height: 100%;
+    }
+
+.rnd-swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      /* background: #ddd; */
+      transition: all .3s;
+    }
+
+    .rnd-swiper-slide h2 { text-align:center; margin-top:20px; font-size:2.25rem; opacity:0.5 }
+
+.rnd-swiper-slide img { width:100%; text-align:center; margin:0 auto; display:block;  transition:all .3s; filter:grayscale(1);  }
+    .rnd-swiper-slide-active {
+      transform: scale(1.05);
+      /* background: #ffa; */
+      /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+    }
+
+.rnd_con .swiper-slide-active  img { transform:scale(1.1); 
+      filter:grayscale(0); }
+      .rnd_con .swiper-slide-active h2 { font-size:3rem; opacity:1; }
+
+.rnd_con .description { 
+        position:relative;
+        top: 30px;
+        z-index:1;
+        text-align : center; 
+        opacity: 0;
+        transition: all 0.5s ease;
+        word-break: keep-all;
+        font-size:1.5rem; 
+      }
+
+.rnd_con .description b { font-weight:800; font-size:2.5rem; }
+.rnd_con .description em { font-size:1.5rem; display:block; margin:10px 20px; font-weight:300; opacity:0.5; }
+    
+.rnd_con .swiper-slide-active:hover .description {
+      opacity: 1;
+      top:10px;
+    }
+
+    .rnd-prev,
+    .rnd-next {
+      display:none!important; 
+      color: #000;
+    }
+    
+    /* .swiper-button-prev,
+    .swiper-button-next {
+      display:none!important; 
+      color: #000;
+    } */
+    
+    .rnd-pagination {
+      display:none!important;  
+      background: #333;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #f90;
+    }
+
+        @media (min-width: 1024px) {
+          /* .rnd-swiper-slide img { width:70%; } */
+        }

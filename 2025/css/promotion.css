@@ -1,0 +1,34 @@
+/*====PROMOTION====*/
+#PROMOTION .mainTitle span { color:#fff; }
+#PROMOTION .subTitle { color:#fff; }
+#PROMOTION .content { width:100%; top:50px; }
+#PROMOTION .content>div>div { width:50%; }
+#PROMOTION .promotion-box1 { align-items:flex-end; }
+#PROMOTION .promotion-box2>div { justify-content:center; }
+
+
+#PROMOTION .pro_graph {  }
+#PROMOTION .pro_graph img { width:100%; }
+#PROMOTION .pro_graph i { display:block; text-align:center; font-size:1.7rem; padding:10px 0 20px 0;  }
+
+#PROMOTION .pro_text { flex-wrap:wrap; width:100%; margin:0 auto;  }
+#PROMOTION .pro_text p { font-size:4rem; font-weight:900; color:#00E0B3; }
+#PROMOTION .pro_text ul { padding:5px 30px; }
+#PROMOTION .pro_text ul li { color:#fff; }
+#PROMOTION .pro_text ul li:nth-child(1) { font-size:2.25rem; }
+#PROMOTION .pro_text ul li:nth-child(2) {  font-size:1.8rem; color:#888; padding:20px 0 5px 0; }
+#PROMOTION .pro_text ul li:nth-child(3) { font-size:2rem; font-weight:bold; }
+#PROMOTION .pro_text ul li b {}
+#PROMOTION .pro_text ul li strong { font-size:3rem; color:#00C9DF;  }
+
+@media (min-width: 1024px) {
+    /*
+    .PROMOTION .pro_graph i { font-size:17px; }
+
+    .PROMOTION .pro_text p { font-size:30px; }
+    .PROMOTION .pro_text ul li:nth-child(1) { font-size:23px; }
+    .PROMOTION .pro_text ul li:nth-child(2) {  font-size:17px; }
+    .PROMOTION .pro_text ul li:nth-child(3) { font-size:20px; font-weight:bold; } 
+    .PROMOTION .pro_text ul li strong { font-size:20px; }
+    */
+}
